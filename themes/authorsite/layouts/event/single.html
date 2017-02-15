@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+  <!-- Wayfinding -->
+  <!-- {{ partial "breadcrumb.html" . }} -->
+  <main class="w-100 cf min-vh-100 ph4 ph0-l">
+
+    <div class="fl w-100 w-25-l pt5-l pb4 tr bg-white">
+      <!-- <a href="#" class="link db lh-copy pv2 pr5 bg-animate near-black hover-white hover-bg-custom-green">Book extras</a> -->
+      <!-- <a href="#" class="link db lh-copy pv2 pr5 bg-animate near-black hover-white hover-bg-custom-green">News</a> -->
+      <!-- <a href="#" class="link db lh-copy pv2 pr5 bg-animate near-black hover-white hover-bg-custom-green">Events</a> -->
+    </div>
+    <div class="fl w-100 w-50-l mb5">
+        <div class="f4 f2-l fw6 pt5-l pl2 mb4-l">Event</div>
+
+          <section class="cf w-100 gray hover-white pl2 pv4 pv4-l">
+            {{ $date := .Params.start_at }}
+            <div class="f6 mb4">{{ dateFormat "2 Jan 2006" $date }}</div>
+            <div class="f3 f2-l fw2 mt2 mb3 near-black">{{ .Title }}</div>
+            <div class="f5 f4-l lh-copy near-black text-copy">
+              {{ .Content | markdownify }}
+            </div>
+            <div class="f5 f4-l lh-copy mt4 near-black text-copy">{{ .Params.venue.name }}<br>
+            {{ .Params.venue.address }}<br>
+            {{ .Params.venue.city }}, {{ .Params.venue.state }}, {{ .Params.venue.zip }}
+            </div>
+          </section>
+
+    </div>
+
+
+  </main>
+
+
+{{ end }}

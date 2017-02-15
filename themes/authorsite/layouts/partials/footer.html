@@ -1,0 +1,30 @@
+{{ $currentPage := . }}
+{{ $.Scratch.Add "footerlinkClasses" "link dim db dib-ns light-red pr3-l mb4 pb2 pb0-l w-100 w-auto-ns" }}
+<footer class="cf pt1 secondary-text-color" role="contentinfo" style="clear: both;">
+
+  {{ if isset .Site.Params "description" }}
+    <div class="bg-accent-color-darkTK bg-primary-color-dark  f4  ph2 pb2 text-on-primary-color pv4 tc tracked lh-copy">
+      <div class="measure-wide-l tc center fw3">
+        {{ .Site.Params.description }}
+      </div>
+    </div>
+  {{ end }}
+
+  <div class="cf brand-font black f6 fw2 ph2 pb2 pt2">
+
+
+    <div class="h6 pl2 tc">
+
+      <span class="link db dib-ns primary-text-color mb0 pb2 pb0-l w-100 w-auto-ns">
+        &copy; {{ .Now.Format "2006" }} {{ .Site.Title }}, All Rights Reserved.
+      </span>
+
+      <a href="http://sonnetmedia.net" class="{{ $.Scratch.Get "footerlinkClasses" }}">
+        Site by the New Dynamic
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>

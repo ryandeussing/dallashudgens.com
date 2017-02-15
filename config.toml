@@ -1,0 +1,39 @@
+languageCode = "en-us"
+title = "Dallas Hudgens"
+baseurl = "http://dallashudgens.com"
+theme = "authorsite"
+metaDataFormat = "yaml"
+
+[params]
+    featured_blurb_for_books_page = "(Drive Like Hell) is so much fun that it's easy to forget how difficult it is to portray decent people acting like morons with an artfulness sufficient to transform it into boneheaded genius. – Kirkus"
+
+[permalinks]
+  page = "/:title/"
+  about = "/:filename/"
+
+[[menu.main]]
+    name = "about"
+    weight = 0
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "books"
+    identifier = "books"
+    weight = 1
+    url = "/book/"
+[[menu.main]]
+    name = "contact"
+    identifier = "contact"
+    weight = 2
+    url = "/contact/"
+[[menu.main]]
+    name = "journal"
+    identifier = "journal"
+    weight = 3
+    url = "/journal/"
+[[menu.main]]
+    name = "events"
+    identifier = "events"
+    weight = 4
+    url = "/event/"
+

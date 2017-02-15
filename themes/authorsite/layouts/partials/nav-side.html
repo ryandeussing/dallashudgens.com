@@ -1,0 +1,15 @@
+{{ $.Scratch.Add "sharedAsideClasses" "fixed left-0 top-0 w-100 h-100 z-5 overflow-hidden" }}
+{{ $.Scratch.Add "sharedNavClasses" "relative bg-primary-color fbg-white h-100 w-90 w-100-l overflow-auto vh-100 mw5-5 shadow-2" }}
+
+<aside class="{{ $.Scratch.Get "sharedAsideClasses" }} dn db-l mw5-5 brTK shadow-2 b--light-gray">
+  <nav class="{{ $.Scratch.Get "sharedNavClasses" }}">
+    {{ partial "nav-content" . }}
+  </nav>
+</aside>
+
+<aside class="{{ $.Scratch.Get "sharedAsideClasses" }} js-side-nav side-nav pointer-events-none  db dn-l">
+  <nav class="{{ $.Scratch.Get "sharedNavClasses" }} js-side-nav-container side-nav__container ">
+    {{ partial "nav-button-close" . }}
+    {{ partial "nav-content" . }}
+  </nav>
+</aside>

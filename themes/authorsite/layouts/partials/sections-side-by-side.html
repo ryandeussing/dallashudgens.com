@@ -1,0 +1,48 @@
+<!-- Content  -->
+<main class="vh-100f cf flex-l flex-wrap">
+
+  <!-- LEFT Section  -->
+  <section class="w-100 w-40-l fl pa4">
+    <h1>
+      {{ .Title }}
+    </h1>
+    <div class="lh-copy">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- RIGHT Section  -->
+  <section class="w-100 w-60-l fl pa4">
+    {{ range where .Data.Pages "Section" .Section }}
+      <div class="bg-white pa4 mb4 shadow-hover relative">
+
+
+        {{ .Date.Format "Mon, Jan 2, 2017" }}
+        <h2 class="primary-color">{{ .Title }}</h2>
+
+        <div class="f4 lh-copy">
+          {{ if .Params.description }}
+            {{ .Params.description }}
+          {{ else }}
+            {{ .Content }}
+          {{ end }}
+        </div>
+
+        {{ if .Params.link_to_site }}
+          <a href="{{ .URL }}" class="{{ .Site.Params.button_classes }}">
+            Visit the {{ .Title }} program site
+          </a>
+          <a href="{{ .URL }}" class="link dim black f6 mb4 db">
+            or get more information by clicking here.
+          </a>
+        {{ else }}
+          <a href="{{ .URL }}" class="{{ .Site.Params.button_classes }}">
+            More Information
+          </a>
+        {{ end }}
+
+      </div>
+    {{ end }}
+  </section>
+
+</main>

@@ -1,0 +1,36 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "The New Dynamic Author Site"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = ""
+homepage = "http://siteforthistheme.com/"
+tags = ["website", "starter"]
+features = ["", ""]
+min_version = 0.18
+
+[author]
+  name = "Bud Parr"
+  homepage = "https://github.com/budparr"
+
+[[menu.main]]
+    name = "about hugo"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "getting started"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/getting-started/"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
+
+  [params]
+    nav_side = true

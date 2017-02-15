@@ -1,0 +1,40 @@
+<nav class="cf pv3 ph4 ph3-m flex-l items-baseane fixed-l top-0 right-0 left-0 z4 bg-near-black near-white">
+  <div class="w-100 w-40-l">
+    <a href="/" class="b mv2 mr4-l dib link near-white hover-dark-red" style="font-size: 2rem; white-space: nowrap;">
+    {{ .Site.Title | markdownify  }}
+    </a>
+  </div>
+
+<ul class="list di pl0 w-100 tr">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
+    {{ if .HasChildren }}
+    <li class="di sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+      <a href="javascript:;" class="link ttc f6 f5-ns dib mr2 mr4-l hover-dark-red near-white">
+       {{ .Pre }}
+       <span>{{ .Name }}</span>
+       <span class="menu-arrow arrow_carrot-right"></span>
+      </a>
+      <ul class="sub list">
+        {{ range .Children }}
+        <li{{if $currentPage.IsMenuCurrent "main" . }} class="active di"{{end}}><a href="{{.URL}}" class="link ttc f6 f5-ns dib mr2 mr4-l hover-dark-red near-white"> {{ .Name }} </a> </li>
+        {{ end }}
+      </ul>
+    {{else}}
+    <li class="di">
+      <a href="{{.URL}}" class="link ttc f6 f5-ns dib mr2 mr4-l hover-dark-red near-white">
+         {{ .Pre }}
+         <span>{{ .Name }}</span>
+      </a>
+    {{end}}
+    </li>
+   {{end}}
+   </ul>
+
+</nav>
+
+
+
+
+
+

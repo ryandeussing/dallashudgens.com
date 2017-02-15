@@ -1,0 +1,19 @@
+{{ define "main" }}
+<!--   -->  <!-- Wayfinding -->
+  <!-- {{ partial "breadcrumb.html" . }} -->
+  <main class="w-100 cf min-vh-100">
+    <!-- TOP Section  -->
+    <section class="w-75-m w-60-l pa4 center">
+      <h1 class="mt-3 mt4-ns mb4-l">{{ .Title }}</h1>
+      <div class="f5 f4-ns lh-copy">
+        {{ if .Params.image }}
+          <img src="{{ .Params.image }}" class="fl-ns w-33-ns mr3-ns">
+        {{ end }}
+
+        {{ .Content }}
+      </div>
+    </section>
+
+  </main>
+
+{{ end }}

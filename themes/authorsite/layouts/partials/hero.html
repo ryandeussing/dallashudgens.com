@@ -1,0 +1,31 @@
+{{ $hero_image := .Params.hero }}
+<div class="cf pa4-lTK bg-light-gray" >
+
+
+<div class="cover bg-left bg-top-l" style="background-image: url( {{ $hero_image.image }})">
+  <div class="bg-primary-color-dark relative o-70">
+    <div class="absolute top-2 right-2 near-white o-70 f6">
+      {{ $hero_image.caption }}
+    </div>
+    <div class="dt w-100 mw8">
+
+      <div class="measure-wide-l pt5 pt7-m pt7-l ph4 pb4">
+
+        <h1 class="brand-font f3 f2-l fw9 white-90 mb0 lh-title">
+          {{ .Title | markdownify }}
+        </h1>
+
+        {{ if isset .Params "description" }}
+          <h2 class="fw3 f3 white-80 lh-copy">
+            {{ .Params.description }}
+          </h2>
+        {{ end }}
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>

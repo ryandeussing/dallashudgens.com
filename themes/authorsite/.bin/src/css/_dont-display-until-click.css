@@ -1,0 +1,18 @@
+
+/* using these to hide the link description */
+@media (--breakpoint-large) {
+.dont-display-child-until-click ul {
+  /*height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s linear 300ms, opacity 300ms;*/
+  display: none;
+}
+.dont-display-child-until-click ul:target  {
+  /*visibility: visible;
+  transition: visibility 1s, opacity 0.5s linear;
+  opacity: 1;
+  height: auto;*/
+  display: block;
+}
+}

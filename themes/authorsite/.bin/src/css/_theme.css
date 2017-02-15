@@ -1,0 +1,33 @@
+.brand-font {font-family: var(--brand-font)}
+.sans-serif {font-family: var(--primary-font)}
+
+.base-font {font-family: var(--base-font)}
+.smallprint-font {font-family: var(--smallprint-font)}
+
+.primary-color-dark { color: var(--primary-color-dark)}
+.primary-color-dark-80 { color: var(--dark-blue-80)}
+.primary-color { color: var(--primary-color)}
+.primary-color-light { color: var(--primary-color-light)}
+.primary-color-lightest { color: var(--primary-color-lightest)}
+
+
+.bg-primary-color-dark { background-color: var(--primary-color-dark)}
+.bg-primary-color-dark-80 { background-color: var(--dark-blue-80)}
+.hover-bg-primary-color-dark:hover { background-color: var(--primary-color-dark)}
+.bg-primary-color { background-color: var(--primary-color)}
+.hover-bg-primary-color:hover { background-color: var(--primary-color)}
+.bg-primary-color-light { background-color: var(--primary-color-light)}
+.bg-primary-color-lightest { background-color: var(--primary-color-lightest)}
+
+.bg-accent-color-dark { background-color: var(--accent-color-dark)}
+.bg-accent-color { background-color: var(--accent-color)}
+.bg-accent-color-light { background-color: var(--accent-color-light)}
+.bg-accent-color-lightest { background-color: var(--accent-color-lightest)}
+
+
+
+.text-on-primary-color { color: var(--text-on-primary-color)}
+.primary-text-color { color: var(--primary-text-color)}
+.secondary-text-color { color: var(--secondary-text-color)}
+.disabled-text-color { color: var(--disabled-text-color)}
+.divider-color { color: var(--divider-color)}

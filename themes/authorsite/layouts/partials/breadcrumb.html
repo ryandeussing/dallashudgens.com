@@ -1,0 +1,46 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+{{ $baseurl := .Site.BaseURL }}
+{{ $fullurl := print ( .RelPermalink | replaceRE "[^/]+/$" "") }}
+
+<div class="ma0 ph4 pv3 f3 fw6 bg-primary-color-dark text-on-primary-color">
+
+  <ul class="list ma0 pa0">
+
+    {{ range $index, $element := split $fullurl "/" }}
+      {{ $.Scratch.Add "path" $element }}
+        {{ if ne $element "" }}
+        <li class="dib mr2 lh-solid">
+          <a class="link white dim mr2" href='{{ $baseurl }}{{ $.Scratch.Get "path" }}'>{{ if isset $.Site.Data.titles . }} {{ index $.Site.Data.titles . | title | markdownify }} {{ else }} {{ . | title | markdownify }} {{ end }}
+          </a>
+          &raquo;
+        </li>
+        {{ $.Scratch.Add "path" "/" }}
+        {{ end }}
+    {{ end }}
+    <li class="dib mr2 lh-solid">
+      <a href='' class="link white dim mr2">
+        {{ .Title | title | markdownify }}
+      </a>
+    </li>
+
+  </ul>
+
+</div>
+
+
+
+  <!-- SUBMENU -->
+  <div class="ma0 ph4 pv3 f5 fw6 bg-primary-color-dark-80TK bg-primary-color-lightest text-on-primary-color">
+    <ul class="list ma0 pa0 dn">
+      <li class="dib mr3">
+        <a href="#" class="link white dim mr2">Who We Are</a>
+      </li>
+      <li class="dib mr3">
+        <a href="#" class="link white dim mr2">Get Involved</a>
+      </li>
+      <li class="dib mr3">
+        <a href="#" class="link white dim mr2">Contact</a>
+      </li>
+    </ul>
+  </div>

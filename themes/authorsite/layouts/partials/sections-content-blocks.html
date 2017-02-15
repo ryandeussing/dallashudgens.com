@@ -1,0 +1,27 @@
+{{ range where .Data.Pages "Section" .Section }}
+  <a href="{{.URL}}" class="link fl mb4 w-auto-m w-50-m w-30-l ph3 pv3 gray bg-white shadow-hover shadow-5">
+
+    <h2 class="primary-color">
+      {{ .Title }}
+    </h2>
+
+    <div class="f5 fw4 lh-copy mb4 gray">
+      {{ if .Params.description }}
+        {{ .Params.description | markdownify }}
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
+
+    <img src="/images/ic_link_black_24px.svg" alt="" class="h1 v-mid">
+    </div>
+
+    <div class="mv4 dn">
+      {{ if .Params.link_to_site }}
+        {{partial "components/button" (dict "copy" "Visit the Program Site" "link" .Params.link_to_site "localClasses" "w-100 tc bg-silver " )}}
+      {{ else }}
+        {{partial "components/button" (dict "copy" "More Information" "link" .URL "localClasses" "w-100 tc bg-silver")}}
+      {{ end }}
+    </div>
+
+  </a>
+{{ end }}

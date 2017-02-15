@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+  <!-- Wayfinding -->
+  <!-- {{ partial "breadcrumb.html" . }} -->
+  <main class="w-100 cf min-vh-100">
+
+    <div class="fl w-100 w-25-l pt5 pb4 tr bg-light-gray">
+      <a href="#" class="link db lh-copy pv2 pr5 bg-animate near-black hover-white hover-bg-custom-green">Book extras</a>
+      <a href="#" class="link db lh-copy pv2 pr5 bg-animate near-black hover-white hover-bg-custom-green">News</a>
+      <a href="#" class="link db lh-copy pv2 pr5 bg-animate near-black hover-white hover-bg-custom-green">Events</a>
+    </div>
+    <div class="fl w-100 w-75-l mb5">
+        <div class="f2 fw6 pt5 ph4 mb4">Journal</div>
+        {{ range (where .Data.Pages "Section" "journal") }}
+        <a href="{{ .URL }}" class="fl w-100 link bg-animate hover-bg-custom-green">
+          <section class="cf w-100 gray hover-white ph4 pv4 pv4-l bb b--silver">
+            {{ $date := .Params.publish_date }}
+            <div class="f6">{{ dateFormat "2 Jan 2006" $date }}</div>
+            <div class="f2 fw2 mt2 mb3 near-black">{{ .Title }}</div>
+            <div class="lh-copy">
+              {{ .Params.excerpt | markdownify }}
+            </div>
+          </section>
+        </a>
+
+      {{ end }}
+    </div>
+
+
+  </main>
+
+
+{{ end }}
