@@ -26,14 +26,14 @@ metaDataFormat = "yaml"
     identifier = "contact"
     weight = 2
     url = "/contact/"
-[[menu.main]]
-    name = "journal"
-    identifier = "journal"
-    weight = 3
-    url = "/journal/"
-[[menu.main]]
-    name = "events"
-    identifier = "events"
-    weight = 4
-    url = "/event/"
+# [[menu.main]]
+#     name = "journal"
+#     identifier = "journal"
+#     weight = 3
+#     url = "/journal/"
+# [[menu.main]]
+#     name = "events"
+#     identifier = "events"
+#     weight = 4
+#     url = "/event/"
 
