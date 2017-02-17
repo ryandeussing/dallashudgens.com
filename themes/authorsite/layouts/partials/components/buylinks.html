@@ -7,8 +7,8 @@
     <a href="//search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ .hardcover }}" target="_blank" class="{{ .buylinkClasses }}">
       Barnes & Noble
     </a>
-    <span class='isbn10_{{ .Params.hardcover_isbn }}'></span><!--  pulls in 10 digit ASIN for -->
-    <!-- {{ partial "amazon_isbn_hardcover.js" (dict "content" . ) }} -->
+    <span class='isbn10_{{ .hardcover }}'></span><!--  pulls in 10 digit ASIN for -->
+    {{ partial "amazon_isbn_hardcover.js" (dict "hardcover" .hardcover "buylinkClasses" .buylinkClasses ) }}
   {{ else if .paperback }}
     <a href="//www.indiebound.org/product/info.jsp?isbn={{ .paperback }}" target="_blank" class="{{ .buylinkClasses }}">
       Your Independent Bookstore

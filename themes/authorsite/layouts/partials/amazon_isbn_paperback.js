@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type = "text/javascript" >
   function ISBN13toISBN10(isbn13) {
     var start = isbn13.substring(3, 12);
     var sum = 0;
@@ -19,8 +19,7 @@
   var switchIsbn = function(el) {
     el.innerHTML = '<a href="https://www.amazon.com/dp/' + ISBN13toISBN10("{{ .paperback | safeJS }}") + '" title="Amazon" target="_blank" class="{{ .buylinkClasses }}">Amazon</a>';
   }
-  var isbn10 = document.getElementsByClassName("isbn10_{{ .paperback | safeJS }}");
-  for(var i = 0; i < isbn10.length; i++) {
-    switchIsbn(isbn10[i])
-  }
-</script>
+var isbn10 = document.getElementsByClassName("isbn10_{{ .paperback | safeJS }}");
+for (var i = 0; i < isbn10.length; i++) {
+  switchIsbn(isbn10[i])
+} </script>
