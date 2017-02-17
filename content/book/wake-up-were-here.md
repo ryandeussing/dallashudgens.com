@@ -8,11 +8,10 @@ description: |
 ebook_isbn:
 hardcover_isbn: null
 paperback_isbn: 9780984764808
-publication_date: 2012-04-10
+date: 2012-04-10
 reviews:
 - attribution:
   copy_markdown:
 subtitle: A Novel
 title: Wake Up, We're Here
 ---
-
