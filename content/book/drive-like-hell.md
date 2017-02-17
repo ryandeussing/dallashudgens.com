@@ -6,7 +6,7 @@ description: |
 ebook_isbn:
 hardcover_isbn: 9780743251631
 paperback_isbn: 9780743261814
-date: 2007-08-21
+publication_date: 2007-08-21
 reviews:
 - attribution: Kirkus (starred review)
   copy_markdown: "(Drive Like Hell) is so much fun that it's easy to forget how difficult it is to portray decent people acting like morons with an artfulness sufficient to transform it into boneheaded genius."
@@ -19,3 +19,5 @@ reviews:
 subtitle: A Novel
 title: Drive Like Hell
 ---
+
+

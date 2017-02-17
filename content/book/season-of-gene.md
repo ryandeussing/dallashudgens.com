@@ -8,7 +8,7 @@ description: |
 ebook_isbn: 9781934137413
 hardcover_isbn: null
 paperback_isbn: 9781416541493
-date: 2007-07-06
+publication_date: 2013-07-06
 reviews:
 - attribution: A Book Sense Notable For October 2007
   copy_markdown: “(Season of Gene) has more action than a Hollywood blockbuster and more heart than a bloodhound. A super book."
@@ -23,3 +23,5 @@ reviews:
 subtitle: A Novel
 title: Season of Gene
 ---
+
+
