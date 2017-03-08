@@ -5,7 +5,7 @@
   <main class="w-100 cf min-vh-100">
     <section class="w-80-l ph4 ph4-m center pv4 pt5-l pb-2-l f4 f3-l" style="line-height: 1.8;">
     {{ if .Site.Params.featured_blurb_for_books_page }}
-      {{ .Site.Params.featured_blurb_for_books_page }}
+      &#8220;{{ .Site.Params.featured_blurb_for_books_page }}&#8221;
     {{ end }}
     </section>
 
@@ -35,7 +35,8 @@
       </div>
       <div class="fl w-100 w-60-l mt4 mt0-ns">
         <div class="f3 lh-copy mb3 mt3 mt0-l">
-          {{ .Params.blurb | markdownify  }}
+          &#8220;{{ .Params.blurb | markdownify  }}&#8221;
+
         </div>
         <div class="f4 lh-copy">
           {{ .Params.description | markdownify }}
@@ -52,7 +53,7 @@
 
       {{ range first 1 (.Params.reviews) }}
         <div class="blurb f3-l lh-copy mb5">
-          <p class="mv4">{{ .copy_markdown | markdownify }}</p>
+          <p class="mv4">&#8220;{{ .copy_markdown | markdownify }}&#8221;</p>
           <span class="f5"> – {{ .attribution | markdownify }}</span>
         </div>
       {{ end }}
@@ -61,15 +62,5 @@
 
   {{ end }}
   </main>
-
-  <section class="w-80-l mt4 ph4 ph4-m center">
-    <div class="fl w-100 w-60-l mv4 mt0-ns">
-      <img src="/img/lettersofwcw.jpg" style="max-height:200px;">
-      <img src="/img/A_Long_Retreat.jpg" style="max-height:200px;">
-      <img src="/img/cover_a-long-retreat_uk.jpg" style="max-height:200px;">
-      <p class="lh-copy">A Long Retreat available from <a class="link dim dark-red" target="_blank" href="http://www.dltbooks.com/">Darnton Longman and Todd</a><br>
-The Letters of William Carlos Williams was Winner of the 2009 Louis Martz Prize</p>
-    </div>
-  </section>
 
 {{ end }}

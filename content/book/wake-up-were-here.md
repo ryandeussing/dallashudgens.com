@@ -18,6 +18,6 @@ reviews:
 - attribution: Roxane Gay, *Treehouse*
   copy_markdown: "…a gritty collection of fiction about people who live rough, complicated lives. Awesome endings in every story."
 - attribution: Emily St. John Mandel, *The Millions*
-  copy_markdown: “Hudgens doesn't shy away from the brutality of life on earth -- the illness, the decreptitude, the humiliations and the teen suicides -- but the grittiness is never gratuitous, and his stories are infused with compassion and hope."
+  copy_markdown: "Hudgens doesn't shy away from the brutality of life on earth -- the illness, the decreptitude, the humiliations and the teen suicides -- but the grittiness is never gratuitous, and his stories are infused with compassion and hope."
 
 ---

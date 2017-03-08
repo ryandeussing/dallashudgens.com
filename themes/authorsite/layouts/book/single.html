@@ -23,7 +23,7 @@
       </div>
       <div class="fl w-100 w-60-l mt4 mt0-ns">
         <div class="f3 lh-copy mb3 mt3 mt0-l">
-          {{ .Params.blurb | markdownify  }}
+          &#8220;{{ .Params.blurb | markdownify  }}&#8221;
         </div>
         <div class="f4 lh-copy">
           {{ .Params.description | markdownify }}
@@ -41,7 +41,7 @@
       {{ range .Params.reviews }}
 
         <div class="blurb f3-l lh-copy mb5">
-          <p class="mv4">{{ .copy_markdown | markdownify }}</p>
+          <p class="mv4">&#8220;{{ .copy_markdown | markdownify }}&#8221;</p>
           <span class="f5"> – {{ .attribution | markdownify }}</span>
         </div>
       {{ end }}

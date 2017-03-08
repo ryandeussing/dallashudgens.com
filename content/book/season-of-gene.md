@@ -11,15 +11,15 @@ paperback_isbn: 9781416541493
 date: 2007-07-06
 reviews:
 - attribution: A Book Sense Notable For October 2007
-  copy_markdown: “(Season of Gene) has more action than a Hollywood blockbuster and more heart than a bloodhound. A super book."
+  copy_markdown: "(Season of Gene) has more action than a Hollywood blockbuster and more heart than a bloodhound. A super book."
 - attribution: Publishers Weekly
-  copy_markdown: “Those ready for a rowdy ride won't be disappointed."
+  copy_markdown: "Those ready for a rowdy ride won't be disappointed."
 - attribution: Atlanta Magazine
-  copy_markdown: “(Hudgens) shows off plenty of the raw talent -- for metaphor, for phrasing, for pure observation -- that gave his first novel, Drive Like Hell, a genuine spark."
+  copy_markdown: "(Hudgens) shows off plenty of the raw talent -- for metaphor, for phrasing, for pure observation -- that gave his first novel, Drive Like Hell, a genuine spark."
 - attribution: Kirkus (starred review)
   copy_markdown: "Crime and baseball make for an irresistible combination in this raunchy, fast-moving caper, a second novel just as good as Hudgens's wild debut (Drive Like Hell, 2005)...A nourishing slice of Americana, expletives and all."
 - attribution: Booklist
-  copy_markdown: “Hudgens has scored again. He's given readers an engaging, knowing glimpse of an odd, but no doubt real, world of arrested development. And he knows his baseball"
+  copy_markdown: "Hudgens has scored again. He's given readers an engaging, knowing glimpse of an odd, but no doubt real, world of arrested development. And he knows his baseball"
 subtitle: A Novel
 title: Season of Gene
 ---
