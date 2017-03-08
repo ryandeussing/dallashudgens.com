@@ -15,7 +15,13 @@
 
      {{ .Hugo.Generator }}
 
-     {{ partial "seo/main" . }}
+     {{ if eq (getenv "HUGO_ENV") "production" }}
+     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+      {{- partial "seo/main" . -}}
+      {{ else }}
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      {{ end }}
+
 
      <link href='/css/main.min.css' rel='stylesheet' type="text/css" />
     <link href='/css/styles.css' rel='stylesheet' type="text/css" />
