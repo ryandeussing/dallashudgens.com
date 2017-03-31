@@ -4,11 +4,11 @@
 
     <main class="">
 
-      <div class="cover bg-bottom" style="background-image:url({{ $.Params.hero.image }});">
+      <div class="cover bg-center" style="background-image:url({{ $.Params.hero.image }});">
         <div class="cf w-80-l ph4 ph4-m center pv4 pv5-l">
           <div class="fl w-100 w-50-l pt4-l">
             <div class="cf pr3 f4 f3-ns lh-copy white">
-              &#8220;{{ .Params.blurb | markdownify }}&#8221;              
+              &#8220;{{ .Params.blurb | markdownify }}&#8221;
             </div>
 
             <div class="hide-s show-l">{{ partial "components/buylinks" (dict "hardcover" .Params.hardcover_isbn "paperback" .Params.paperback_isbn "ebook" .Params.ebook_isbn "buylinkClasses" "f5 link bg-animate hover-bg-near-black br2 ba ph3 pv2 mr1 mb2 db dib-ns white" "textcolor" "white") }}</div>

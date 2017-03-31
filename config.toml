@@ -6,6 +6,7 @@ metaDataFormat = "yaml"
 
 [params]
     featured_blurb_for_books_page = "(Drive Like Hell) is so much fun that it's easy to forget how difficult it is to portray decent people acting like morons with an artfulness sufficient to transform it into boneheaded genius. – Kirkus"
+    description = "The personal website of Dallas Hudgens, author of Wake up We're Here, and publisher at Relegation Books"
 
 [permalinks]
   page = "/:title/"
@@ -36,4 +37,3 @@ metaDataFormat = "yaml"
 #     identifier = "events"
 #     weight = 4
 #     url = "/event/"
-
