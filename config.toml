@@ -22,11 +22,11 @@ metaDataFormat = "yaml"
     identifier = "books"
     weight = 1
     url = "/book/"
-[[menu.main]]
-    name = "contact"
-    identifier = "contact"
-    weight = 2
-    url = "/contact/"
+# [[menu.main]]
+#     name = "contact"
+#     identifier = "contact"
+#     weight = 2
+#     url = "/contact/"
 # [[menu.main]]
 #     name = "journal"
 #     identifier = "journal"
